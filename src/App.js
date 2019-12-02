@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import {Layout} from 'react-wui-modern';
+import Header from './main/Header';
+import SliderContent from './main/SliderContent';
+import {LayoutContentRoute} from './common/RouteConfig';
 
 function App() {
+  const [collapse, setCollapse] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Header/>
+        <Layout>
+          <Layout.Split style={{marginBottom: '1rem'}}>
+            <Layout.Slider collapse={collapse} extraClassName="demo-slider"
+                           style={{flex: '0 0 250px'}}>
+              <div className="demo-slider-mask"></div>
+              <SliderContent/>
+            </Layout.Slider>
+            <Layout>
+              <LayoutContentRoute collapse={collapse}
+                                  setCollapse={setCollapse}/>
+            </Layout>
+          </Layout.Split>
+        </Layout>
+      </>
+
   );
 }
 

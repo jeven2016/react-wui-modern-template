@@ -1,0 +1,172 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  background-color: #eee;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+.demo-login-page {
+  background-size: cover;
+  background: url("bg2.jpg") no-repeat;
+  //background: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .demo-login-form {
+    padding: 1rem 1rem;
+  }
+
+  .demo-login-label {
+    color: #ababc1;
+    font-weight: bold;
+  }
+
+  .demo-login-card {
+    border: none;
+    background: #344A60;
+  }
+
+  .demo-login-input {
+    border-radius: 0 2rem 2rem 0 !important;
+    border: none !important;
+
+    &::placeholder {
+      //color: #fff;
+    }
+
+    &:focus {
+      //background: rgba(39, 42, 95, .3);
+    }
+  }
+
+  .demo-login-label {
+    border-radius: 2rem 0 0 2rem !important;
+    border: none !important;
+  }
+}
+
+.demo-slider {
+  background-size: cover;
+  background-image: url("bg.png");
+  //background-position: center center;
+  //background: #344A60;
+  position: relative;
+  box-shadow: 1px 0 5px #3d7eea, 0 0 7px #333;
+  z-index: 3;
+}
+
+.demo-slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem 0;
+  z-index: 5;
+}
+
+.demo-menu-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+  z-index: 5;
+
+  .menu > .menu-list, .submenu > .menu-list {
+    background-color: transparent;
+  }
+
+  .menu.primary .menu-list > .menu-item.active {
+    background-color: #27AE60;
+    color: white;
+    transition: background-color .5s;
+  }
+
+  .menu.primary .menu-list > .menu-item:not(.disabled):not(.active):focus,
+  .menu.primary .menu-list > .menu-item:not(.disabled):not(.active):hover {
+    color: white !important;
+    text-shadow: 1px 1px 2px #333, 0 0 25px white, 0 0 5px rgba(39, 174, 96, .5);
+    background: rgba(255, 255, 255, .2);
+    transition: background-color .3s;
+  }
+
+  .demo-slider-menu.menu {
+    z-index: 5;
+    background-color: transparent;
+
+
+    .submenu {
+      background-color: transparent;
+      color: white;
+    }
+
+    .menu-header {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+.demo-slider-mask {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, .1);
+}
+
+.demo-slider-info {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.demo-inner-layout-header {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
+  background-color: white;
+  z-index: 2;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.demo-switch-btn {
+  font-size: 1.5rem;
+  border: none;
+  //width: 2rem;
+  //height: 2rem;
+  padding: 0;
+  color: rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
+}
+
+.demo-layout-content {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .demo-slider{
+    max-width: 0;
+    overflow: hidden;
+  }
+}
