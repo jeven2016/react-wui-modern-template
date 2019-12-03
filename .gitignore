@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.idea/
+*.iml
+/react-wui-modern.iml
+/package-lock.json
+/dist/
