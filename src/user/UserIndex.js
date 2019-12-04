@@ -62,9 +62,7 @@ const Title = () => {
     <Col sm={12} md={9} style={{justifyContent: 'flex-end', display: 'flex'}}>
       <Button color="blue" onClick={createUser}>增加</Button>
       <Dropdown position="bottomRight">
-        <Dropdown.Title>
-          <Button><IconMore/>&nbsp;更多</Button>
-        </Dropdown.Title>
+        <Button><IconMore/>&nbsp;更多</Button>
         <Menu hasBorder>
           <Menu.List>
             <Menu.Item id={1} value={1} text="Action 1"/>
@@ -129,9 +127,7 @@ const UserList = (props) => {
         <Button color="blue">修改</Button>
         <Button color="red">删除</Button>
         <Dropdown>
-          <Dropdown.Title>
-            <Button><IconMore/>&nbsp;更多</Button>
-          </Dropdown.Title>
+          <Button><IconMore/>&nbsp;更多</Button>
           <Menu hasBorder>
             <Menu.List>
               <Menu.Item id={1} value={1} text="Action 1"/>
@@ -153,9 +149,7 @@ const UserList = (props) => {
         <Button color="blue">修改</Button>
         <Button color="red">删除</Button>
         <Dropdown>
-          <Dropdown.Title>
-            <Button><IconMore/>&nbsp;更多</Button>
-          </Dropdown.Title>
+          <Button><IconMore/>&nbsp;更多</Button>
           <Menu hasBorder>
             <Menu.List>
               <Menu.Item id={1} value={1} text="Action 1"/>
@@ -177,9 +171,7 @@ const UserList = (props) => {
         <Button color="blue">修改</Button>
         <Button color="red">删除</Button>
         <Dropdown>
-          <Dropdown.Title>
-            <Button><IconMore/>&nbsp;更多</Button>
-          </Dropdown.Title>
+          <Button><IconMore/>&nbsp;更多</Button>
           <Menu hasBorder>
             <Menu.List>
               <Menu.Item id={1} value={1} text="Action 1"/>
@@ -201,9 +193,7 @@ const UserList = (props) => {
         <Button color="blue">修改</Button>
         <Button color="red">删除</Button>
         <Dropdown>
-          <Dropdown.Title>
-            <Button><IconMore/>&nbsp;更多</Button>
-          </Dropdown.Title>
+          <Button><IconMore/>&nbsp;更多</Button>
           <Menu hasBorder>
             <Menu.List>
               <Menu.Item id={1} value={1} text="Action 1"/>
@@ -225,9 +215,7 @@ const UserList = (props) => {
         <Button color="blue"><IconResetPwd/></Button>
         <Button color="red"><IconHome/></Button>
         <Dropdown>
-          <Dropdown.Title>
-            <Button><IconMore/></Button>
-          </Dropdown.Title>
+          <Button><IconMore/></Button>
           <Menu hasBorder>
             <Menu.List>
               <Menu.Item id={1} value={1} text="Action 1"/>

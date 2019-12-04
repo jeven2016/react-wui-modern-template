@@ -11,7 +11,7 @@
     "react-intl-universal": "^2.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-wui-modern": "^0.1.13",
+    "react-wui-modern": "^0.1.14",
     "scroll-to-element": "^2.0.3",
     "whatwg-fetch": "^3.0.0"
   },
