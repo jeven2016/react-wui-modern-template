@@ -16,10 +16,11 @@
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
-    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.4.7",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",
     "react-app-polyfill": "^1.0.4",
+    "regenerator-runtime": "^0.13.3",
     "serve": "^11.2.0"
   },
   "scripts": {

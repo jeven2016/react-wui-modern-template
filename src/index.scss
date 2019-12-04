@@ -30,33 +30,11 @@ code {
     padding: 1rem 1rem;
   }
 
-  .demo-login-label {
-    color: #ababc1;
-    font-weight: bold;
-  }
-
   .demo-login-card {
     border: none;
     background: #344A60;
   }
 
-  .demo-login-input {
-    border-radius: 0 2rem 2rem 0 !important;
-    border: none !important;
-
-    &::placeholder {
-      //color: #fff;
-    }
-
-    &:focus {
-      //background: rgba(39, 42, 95, .3);
-    }
-  }
-
-  .demo-login-label {
-    border-radius: 2rem 0 0 2rem !important;
-    border: none !important;
-  }
 }
 
 .demo-slider {

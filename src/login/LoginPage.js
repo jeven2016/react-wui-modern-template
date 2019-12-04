@@ -1,6 +1,5 @@
-import React, {useState,useContext} from 'react';
-import {Link, useHistory} from 'react-router-dom';
-import App from '../App';
+import React from 'react';
+import {useHistory} from 'react-router-dom';
 import {
   Alert,
   Button,
@@ -10,13 +9,12 @@ import {
   Form,
   IconWarning,
   Input,
-  InputGroup,
   Row,
 } from 'react-wui-modern';
 import {IconAccount, IconResetPwd} from '../Icons';
 
 const LoginPage = (props) => {
-  const history=useHistory();
+  const history = useHistory();
   const loginPage = <>
     <div className="demo-login-page">
       <Row>
@@ -39,22 +37,18 @@ const LoginPage = (props) => {
               <div className="demo-login-form">
                 <Form>
                   <Form.Item type="row" style={{padding: '0.5rem 0'}}>
-                    <InputGroup block>
-                      <InputGroup.Label extraClassName="demo-login-label">
-                        <IconAccount/>
-                      </InputGroup.Label>
-                      <Input placeholder="用户名"
-                             extraClassName="demo-login-input"/>
-                    </InputGroup>
+                    <Input.IconInput block leftIcon>
+                      <IconAccount style={{color: "blue", fontSize: "1.5rem"}}/>
+                      <Input placeholder="Username"
+                             style={{borderRadius: "2rem", border: "none"}}/>
+                    </Input.IconInput>
                   </Form.Item>
                   <Form.Item type="row" style={{padding: '0.5rem 0'}}>
-                    <InputGroup block>
-                      <InputGroup.Label extraClassName="demo-login-label">
-                        <IconResetPwd/>
-                      </InputGroup.Label>
-                      <Input type="password" placeholder="密码"
-                             extraClassName="demo-login-input"/>
-                    </InputGroup>
+                    <Input.IconInput block leftIcon>
+                      <Input placeholder="Password"
+                             style={{borderRadius: "2rem", border: "none"}}/>
+                      <IconResetPwd/>
+                    </Input.IconInput>
                   </Form.Item>
                   <Form.Item type="row" style={{padding: '0.5rem 0'}}>
                     <div>
@@ -75,7 +69,7 @@ const LoginPage = (props) => {
                     display: 'flex',
                     justifyContent: 'center',
                   }}>
-                    <Button color="blue" onClick={()=>{
+                    <Button color="blue" onClick={() => {
                       history.push("main")
                     }}>
                       登录
