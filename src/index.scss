@@ -142,8 +142,12 @@ code {
   background-color: #fff;
 }
 
+.demo-margin-right {
+  margin-right: 0.25rem;
+}
+
 @media screen and (max-width: 768px) {
-  .demo-slider{
+  .demo-slider {
     max-width: 0;
     overflow: hidden;
   }

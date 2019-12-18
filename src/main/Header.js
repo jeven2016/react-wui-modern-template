@@ -79,13 +79,13 @@ const Header = (props) => {
     <NavBar.List>
       <NavBar.Item hasBackground hasBar>
         <IconHome position="bottom" style={{fontSize: '2rem'}}/>
-        <Tooltip body="您可以在此进行系统的网关设置" position="bottom" margin={20}>
+        <Tooltip body="您可以在此进行系统的网关设置" position="bottom">
           <span>网关管理</span>
         </Tooltip>
       </NavBar.Item>
       <NavBar.Item hasBackground hasBar>
         <IconHome style={{fontSize: '2rem'}}/>
-        <Tooltip body="您可以在此进权限配置" position="bottom" margin={20}>
+        <Tooltip body="您可以在此进权限配置" position="bottom">
           <span>权限管理</span>
         </Tooltip>
       </NavBar.Item>
