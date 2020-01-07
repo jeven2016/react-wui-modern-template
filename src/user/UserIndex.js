@@ -77,7 +77,8 @@ const Title = () => {
 };
 
 const UserList = (props) => {
-  return <table className="table hover text align-center" {...props}>
+  return <div style={{overflow: "auto"}}>
+  <table className="table hover text align-center" {...props}>
     <thead>
     <tr>
       <th>用户名</th>
@@ -156,7 +157,8 @@ const UserList = (props) => {
       </td>
     </tr>
     </tbody>
-  </table>;
+  </table>
+  </div>;
 };
 
 export default UserIndex;

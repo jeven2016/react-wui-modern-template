@@ -7,7 +7,7 @@ import {
   Form, Modal,
   IconHome, Input,
   Layout, Row, Notification,
-  Select,
+  Select, Toggle, Tooltip,
 } from 'react-wui-modern';
 import {useHistory} from 'react-router-dom';
 
@@ -15,11 +15,11 @@ const UserUpdate = (props) => {
   const {action} = props;
   const history = useHistory();
 
-  useEffect(()=>{
+  useEffect(() => {
     Notification.config({
-      position: "topCenter",
+      position: 'topCenter',
     });
-  },[]);
+  }, []);
 
   const back = () => {
     history.push('/main/user');
@@ -90,13 +90,12 @@ const UserUpdate = (props) => {
               </Form.Item>
               <Form.Item type="block">
                 <label>状态</label>
-                <Select block
-                        searchable={false}
-                        defaultValue="enable"
-                        onChange={() => {}}>
-                  <Select.Option value="enable">启用</Select.Option>
-                  <Select.Option value="disable">禁用</Select.Option>
-                </Select>
+                <Tooltip body="禁用/启用该用户" position="right">
+                  <Toggle type="primary"
+                          defaultActive
+                          style={{width: '5rem'}}
+                          content={{on: '启用', off: '禁用', showInBar: true}}/>
+                </Tooltip>
               </Form.Item>
               <Form.Item type="block">
                 <label>描述</label>

@@ -11,11 +11,12 @@
     "react-intl-universal": "^2.2.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-wui-modern": "^0.1.21",
+    "react-wui-modern": "^0.1.28",
     "scroll-to-element": "^2.0.3",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
     "core-js": "^3.4.7",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.0",

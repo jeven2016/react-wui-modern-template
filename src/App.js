@@ -10,13 +10,20 @@ function App() {
       <>
         <Header/>
         <Layout>
-          <Layout.Split style={{marginBottom: '1rem'}}>
-            <Layout.Slider collapse={collapse} extraClassName="demo-slider"
-                           style={{flex: '0 0 250px'}}>
+          <Layout.Split>
+            <Layout.Slider collapse={collapse}
+                           extraClassName="demo-slider"
+                           style={{
+                             position: 'fixed',
+                             flex: '0 0 auto',
+                             width: '250px',
+                             left: 0,
+                             paddingTop: '4rem',
+                           }}>
               <div className="demo-slider-mask"></div>
               <SliderContent/>
             </Layout.Slider>
-            <Layout>
+            <Layout style={{marginLeft: '250px', paddingTop: '4rem'}}>
               <LayoutContentRoute collapse={collapse}
                                   setCollapse={setCollapse}/>
             </Layout>

@@ -67,7 +67,7 @@ const Header = (props) => {
     }
   };
 
-  return <NavBar type="primary" style={{lineHeight: '4rem'}}
+  return <NavBar fixed="top" type="primary" style={{lineHeight: '4rem'}}
                  extraClassName="clear-radius">
     <NavBar.Title>
       <Button color="green" circle style={{marginRight: '1rem'}}>S</Button>
